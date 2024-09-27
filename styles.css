@@ -1,0 +1,108 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #FF0000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    margin: 0 auto;
+    padding: 2rem;
+    background-image: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/12/0b/61/c2/vista-interna-de-la-cantina.jpg?w=1200&h=-1&s=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu-section, .especialidades, .horarios {
+    background-color: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-section, .especialidades, .horarios {
+        width: 90%;
+        img {
+            width: 100%;
+        }
+        ul {
+            padding: 0;
+        }
+    }
+    
+}
+.horarios{
+    margin-top: 30px;
+    margin-bottom: 180px;
+}
+.horarios p {
+    font-weight: bold;
+}
+
+.menu-section li, .especialidades li, .horarios li {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+h2 {
+    color: #008000;
+}
+
+img{
+    width: 70%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
